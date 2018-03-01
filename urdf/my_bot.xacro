@@ -42,7 +42,7 @@
   </link>
 
   <joint name="back_caster_wheel_fixed" type="fixed">
-    <origin xyz="-0.15 0.0 -0.05" rpy="0 0 0"/>
+    <origin xyz="-0.15 0.0 -0.025" rpy="0 0 0"/>
     <child link="back_caster_wheel"/>
     <parent link="chassis" />
   </joint>
@@ -207,7 +207,7 @@
   <!-- ====== Wheels ============= -->
 
   <joint name="left_wheel_hinge" type="continuous">
-    <origin xyz="0.05 0.13 -0.05" rpy="0 0 0"/>
+    <origin xyz="0.05 0.13 -0.025" rpy="0 0 0"/>
     <child link="left_wheel"/>
     <parent link="chassis" />
     <axis xyz="0 1 0" rpy="0 0 0" />
@@ -240,7 +240,7 @@
 
 
   <joint name="right_wheel_hinge" type="continuous">
-    <origin xyz="0.05 -0.13 -0.05" rpy="0 0 0"/>
+    <origin xyz="0.05 -0.13 -0.025" rpy="0 0 0"/>
     <child link="right_wheel"/>
     <parent link="chassis" />
     <axis xyz="0 1 0" rpy="0 0 0" />
