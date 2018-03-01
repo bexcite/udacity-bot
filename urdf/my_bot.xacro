@@ -33,7 +33,7 @@
     <collision name="chassis_collision">
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".8 .8 .1"/>
+        <box size=".4 .4 .1"/>
       </geometry>
     </collision>
 
@@ -41,7 +41,7 @@
     <visual name="chassis_visual">
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".8 .8 .1"/>
+        <box size=".4 .4 .1"/>
       </geometry>
     </visual>
 
@@ -156,7 +156,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <box size="0.6 0.6 0.05"/>
+          <box size="0.3 0.3 0.05"/>
         </geometry>
         <surface>
           <friction>
@@ -172,7 +172,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <box size="0.6 0.6 0.05"/>
+          <box size="0.3 0.3 0.05"/>
         </geometry>
       </visual>
 
