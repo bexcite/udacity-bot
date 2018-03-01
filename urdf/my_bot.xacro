@@ -33,7 +33,7 @@
     <collision name="chassis_collision">
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".8 .8 .1"/>
+        <box size=".8 .8 .1" />
       </geometry>
     </collision>
 
