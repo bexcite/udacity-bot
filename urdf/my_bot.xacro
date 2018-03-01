@@ -98,7 +98,7 @@
 
   </link>
 
-  <joint name="back_caster_wheel_fixed" type="fixes">
+  <joint name="back_caster_wheel_fixed" type="fixed">
     <origin xyz="-0.15 0.0 -0.05" rpy="0 0 0"/>
     <child link="back_caster_wheel"/>
     <parent link="chassis" />
