@@ -41,7 +41,7 @@
     <visual name="chassis_visual">
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".8 .9 .5"/>
+        <box size=".8 .8 .1"/>
       </geometry>
     </visual>
 
