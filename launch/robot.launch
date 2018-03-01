@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find udacity_bot)/urdf/udacity_bot.xacro'"/>
+
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="true"
+        output="screen" args="-urdf -param robot_description -model udacity_bot -z 0.1" />
+
+</launch>
