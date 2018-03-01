@@ -46,6 +46,7 @@
     </visual>
 
 
+<!--
     <collision name="back_caster_collision">
       <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
@@ -93,7 +94,47 @@
         <sphere radius="0.05"/>
       </geometry>
     </visual>
+-->
 
+  </link>
+
+  <joint name="back_caster_wheel_fixed" type="fixes">
+    <origin xyz="-0.15 0.0 -0.05" rpy="0 0 0"/>
+    <child link="back_caster_wheel"/>
+    <parent link="chassis" />
+  </joint>
+  <link name="back_caster_wheel">
+      <inertial>
+        <mass value="0.1"/>
+        <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+        <inertia
+            ixx="1e-6" ixy="0" ixz="0"
+            iyy="1e-6" iyz="0"
+            izz="1e-6"
+        />
+      </inertial>
+      <collision>
+        <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
+        <geometry>
+          <sphere radius="0.05"/>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>0</mu2>
+              <slip1>1.0</slip1>
+              <slip2>1.0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual>
+        <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
+        <geometry>
+          <sphere radius="0.05"/>
+        </geometry>
+      </visual>
   </link>
 
   <!-- ====== Wheels ============= -->
