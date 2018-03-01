@@ -94,7 +94,7 @@
   </gazebo>
 
   <gazebo reference="back_caster_wheel">
-    <material>Gazebo/Grey</material>
+    <material>Gazebo/Orange</material>
   </gazebo>
 
   <gazebo reference="dome0">
