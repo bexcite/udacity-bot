@@ -138,12 +138,12 @@
   </link>
 
 
-  <joint name="dome_fixed" type="fixed">
+  <joint name="dome0_fixed" type="fixed">
     <origin xyz="0 0 0.075" rpy="0 0 0"/>
-    <child link="dome"/>
+    <child link="dome0"/>
     <parent link="chassis" />
   </joint>
-  <link name="dome">
+  <link name="dome0">
       <inertial>
         <mass value="0.1"/>
         <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
@@ -179,9 +179,59 @@
   </link>
 
 
+  <joint name="dome1_fixed" type="fixed">
+    <origin xyz="0 0 0.125" rpy="0 0 0"/>
+    <child link="dome1"/>
+    <parent link="dome0" />
+  </joint>
+  <link name="dome1">
+      <inertial>
+        <mass value="0.1"/>
+        <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+        <inertia
+            ixx="1e-6" ixy="0" ixz="0"
+            iyy="1e-6" iyz="0"
+            izz="1e-6"
+        />
+      </inertial>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.2 0.2 0.05"/>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>0</mu2>
+              <slip1>1.0</slip1>
+              <slip2>1.0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.2 0.2 0.05"/>
+        </geometry>
+      </visual>
+
+  </link>
+
+
+
 
   <!-- ====== Wheels ============= -->
 
+  <joint name="left_wheel_hinge" type="continuous">
+    <origin xyz="0.05 0.13 0" rpy="0 0 0"/>
+    <child link="left_wheel"/>
+    <parent link="chassis" />
+    <axis xyz="0 1 0" rpy="0 0 0" />
+    <limit effort="10000" velocity="1000" />
+    <joint_properties damping="1.0" friction="1.0" />
+  </joint>
   <link name="left_wheel">
     <inertial>
       <mass value="5.0"/>
@@ -206,15 +256,15 @@
     </visual>
   </link>
 
-  <joint name="left_wheel_hinge" type="continuous">
-    <origin xyz="0.05 0.23 0" rpy="0 0 0"/>
-    <child link="left_wheel"/>
+
+  <joint name="right_wheel_hinge" type="continuous">
+    <origin xyz="0.05 -0.13 0" rpy="0 0 0"/>
+    <child link="right_wheel"/>
     <parent link="chassis" />
     <axis xyz="0 1 0" rpy="0 0 0" />
     <limit effort="10000" velocity="1000" />
     <joint_properties damping="1.0" friction="1.0" />
   </joint>
-
   <link name="right_wheel">
     <inertial>
       <mass value="5.0"/>
@@ -239,14 +289,7 @@
     </visual>
   </link>
 
-  <joint name="right_wheel_hinge" type="continuous">
-    <origin xyz="0.05 -0.23 0" rpy="0 0 0"/>
-    <child link="right_wheel"/>
-    <parent link="chassis" />
-    <axis xyz="0 1 0" rpy="0 0 0" />
-    <limit effort="10000" velocity="1000" />
-    <joint_properties damping="1.0" friction="1.0" />
-  </joint>
+
 
 
   <!-- ====== Camera ============= -->
@@ -256,8 +299,6 @@
     <child link="camera" />
     <parent link="chassis" />
   </joint>
-
-
   <link name="camera">
     <inertial>
       <mass value="0.1"/>

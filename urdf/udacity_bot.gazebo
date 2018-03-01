@@ -97,8 +97,12 @@
     <material>Gazebo/Grey</material>
   </gazebo>
 
-  <gazebo reference="dome">
-    <material>Gazebo/Black</material>
+  <gazebo reference="dome0">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="dome1">
+    <material>Gazebo/Grey</material>
   </gazebo>
 
   <gazebo reference="left_wheel">
