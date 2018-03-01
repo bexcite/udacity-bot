@@ -93,6 +93,10 @@
     <material>Gazebo/Grey</material>
   </gazebo>
 
+  <gazebo reference="back_caster_wheel">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
   <gazebo reference="left_wheel">
     <material>Gazebo/Orange</material>
   </gazebo>
