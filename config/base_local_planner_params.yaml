@@ -30,6 +30,8 @@ TrajectoryPlannerROS:
   meter_scoring: true  # false
   publish_cost_grid_pc: false
 
+  dwa: false
+
   prune_plan: false
 
   # Oscillation Prevention Parameters
