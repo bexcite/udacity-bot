@@ -16,6 +16,8 @@ TrajectoryPlannerROS:
 
   # Forward Simulation Parameters
   sim_time: 3.0
+  vx_samples: 8
+  
 
   # Trajectory Scoring Parameters
   # cost =
