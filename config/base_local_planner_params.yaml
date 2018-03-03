@@ -4,18 +4,18 @@ TrajectoryPlannerROS:
 
   # Robot Configuration Parameters
   max_vel_x: 0.6
-  min_vel_x: 0.1
+  min_vel_x: 0.2
 
-  max_vel_theta: 0.7
-  min_vel_theta: -0.7
+  max_vel_theta: 1.5 # 0.7
+  min_vel_theta: -1.5 # 0.7
 
-  min_in_place_vel_theta: 0.2
+  min_in_place_vel_theta: 0.3
 
   escape_vel: -0.15
 
 
   # Forward Simulation Parameters
-  sim_time: 3.0
+  sim_time: 2.0
 
   # Trajectory Scoring Parameters
   # cost =
@@ -24,9 +24,10 @@ TrajectoryPlannerROS:
   #   + occdist_scale * (maximum obstacle cost along the trajectory in obstacle cost (0-254))
   pdist_scale: 0.6
   gdist_scale: 0.8
-  occdist_scale: 0.02
+  occdist_scale: 0.01
   heading_lookahead: 0.6 # 0.325
-  meter_scoring: false
+  heading_scoring: true
+  meter_scoring: true  # false
   publish_cost_grid_pc: true
 
   # Oscillation Prevention Parameters
