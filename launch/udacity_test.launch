@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <arg name="bot" default="udacity" />
+
+    <include file="$(find udacity_bot)/launch/udacity_world.launch">
+      <arg name="bot" value="$(arg bot)" />
+    </include>
+
+    <include file="$(find udacity_bot)/launch/amcl.launch" />
+
+    <node name="navigation_goal" pkg="udacity_bot" type="navigation_goal" />
+
+
+</launch>
