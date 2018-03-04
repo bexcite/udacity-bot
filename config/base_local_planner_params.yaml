@@ -4,24 +4,24 @@ TrajectoryPlannerROS:
 
   # Robot Configuration Parameters
 
-  acc_lim_x: 1.5
-  acc_lim_y: 0
-  acc_lim_theta: 1.5
-
-  max_vel_x: 0.8
-  min_vel_x: -0.6
-
-  max_vel_theta: 0.7 # 0.7
-  min_vel_theta: -0.7 # 0.7
-
-  min_in_place_vel_theta: 0.3
-
-  escape_vel: -0.15
+  # acc_lim_x: 1.5
+  # acc_lim_y: 0
+  # acc_lim_theta: 1.5
+  #
+  # max_vel_x: 0.8
+  # min_vel_x: 0.15
+  #
+  # max_vel_theta: 0.7 # 0.7
+  # min_vel_theta: -0.7 # 0.7
+  #
+  # min_in_place_vel_theta: 0.3
+  #
+  # escape_vel: -0.25
 
 
   # Forward Simulation Parameters
-  sim_time: 2.5
-  vx_samples: 8
+  # sim_time: 3.5
+  # vx_samples: 8
 
 
   # Trajectory Scoring Parameters
@@ -29,21 +29,21 @@ TrajectoryPlannerROS:
   #   pdist_scale * (distance to path from the endpoint of the trajectory in map cells or meters depending on the meter_scoring parameter)
   #   + gdist_scale * (distance to local goal from the endpoint of the trajectory in map cells or meters depending on the meter_scoring parameter)
   #   + occdist_scale * (maximum obstacle cost along the trajectory in obstacle cost (0-254))
-  pdist_scale: 0.6
-  gdist_scale: 0.8
-  occdist_scale: 0.01
-  heading_lookahead: 0.325 # 0.325
-  heading_scoring: false
-  meter_scoring: true  # false
-  publish_cost_grid_pc: false
-
-  dwa: true
-
-  prune_plan: false
+  # pdist_scale: 0.6
+  # gdist_scale: 0.8
+  # occdist_scale: 0.01
+  # heading_lookahead: 0.325 # 0.325
+  # heading_scoring: false
+  # meter_scoring: true  # false
+  # publish_cost_grid_pc: false
+  #
+  # dwa: true
+  # 
+  # prune_plan: false
 
   # Oscillation Prevention Parameters
-  oscillation_reset_dist: 0.5
+  # oscillation_reset_dist: 0.5
 
   # Goal Tolerance Parameters
-  xy_goal_tolerance: 0.15
-  yaw_goal_tolerance: 0.05
+  # xy_goal_tolerance: 0.15
+  # yaw_goal_tolerance: 0.05
