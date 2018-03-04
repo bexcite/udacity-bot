@@ -14,6 +14,9 @@
 
   <!-- Localization -->
 
+  <env name="ROSCONSOLE_CONFIG_FILE"
+       value="$(find udacity_bot)/config/rosconsole.conf"/>
+
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
     <remap from="scan" to="udacity_bot/laser/scan" />
     <param name="odom_frame_id" value="odom" />
