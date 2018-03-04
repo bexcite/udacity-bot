@@ -9,7 +9,7 @@ TrajectoryPlannerROS:
   acc_lim_theta: 1.5
 
   max_vel_x: 0.8
-  min_vel_x: 0.15
+  min_vel_x: -0.6
 
   max_vel_theta: 0.7 # 0.7
   min_vel_theta: -0.7 # 0.7
