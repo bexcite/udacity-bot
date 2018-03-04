@@ -15,7 +15,7 @@ TrajectoryPlannerROS:
 
 
   # Forward Simulation Parameters
-  sim_time: 3.0
+  sim_time: 1.5
   vx_samples: 8
 
 
