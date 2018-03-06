@@ -9,18 +9,19 @@ TrajectoryPlannerROS:
   # acc_lim_theta: 1.5
   #
   # max_vel_x: 0.8
-  # min_vel_x: 0.15
+  min_vel_x: 0.15
   #
   # max_vel_theta: 0.7 # 0.7
   # min_vel_theta: -0.7 # 0.7
   #
-  # min_in_place_vel_theta: 0.3
+
+  min_in_place_vel_theta: 0.3
   #
-  # escape_vel: -0.25
+  escape_vel: -0.25
 
 
   # Forward Simulation Parameters
-  # sim_time: 3.5
+  # sim_time: 1.5
   # vx_samples: 8
 
 
@@ -38,12 +39,12 @@ TrajectoryPlannerROS:
   # publish_cost_grid_pc: false
   #
   # dwa: true
-  # 
+  #
   # prune_plan: false
 
   # Oscillation Prevention Parameters
   # oscillation_reset_dist: 0.5
 
   # Goal Tolerance Parameters
-  # xy_goal_tolerance: 0.15
-  # yaw_goal_tolerance: 0.05
+  xy_goal_tolerance: 0.15
+  yaw_goal_tolerance: 0.05
