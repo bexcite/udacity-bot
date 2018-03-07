@@ -2,7 +2,7 @@
 
 <launch>
 
-    <arg name="bot" default="udacity" />
+    <arg name="bot" default="my" /> <!-- udacity -->
 
     <include file="$(find udacity_bot)/launch/udacity_world.launch">
       <arg name="bot" value="$(arg bot)" />
