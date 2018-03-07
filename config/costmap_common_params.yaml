@@ -6,8 +6,8 @@ raytrace_range: 3.0
 transform_tolerance: 0.3
 
 # robot_radius: 0.25
-footprint: [[-0.22, -0.20], [-0.22, 0.20], [0.22, 0.20], [0.22, -0.20]] # x = 0.42 y = 0.38
-# footprint: [[-0.18, -0.18], [-0.18, 0.18], [0.18, 0.18], [0.18, -0.18]] # x = 0.42 y = 0.38
+footprint: [[-0.22, -0.20], [-0.22, 0.20], [0.22, 0.20], [0.22, -0.20]] # x = 0.42 y = 0.38 (Udacity Robot)
+# footprint: [[-0.18, -0.18], [-0.18, 0.18], [0.18, 0.18], [0.18, -0.18]] # x = 0.42 y = 0.38 (My Custom Robot)
 inflation_radius: 0.4
 
 observation_sources: laser_scan_sensor
